@@ -18,4 +18,7 @@ switch (flags.lang) {
   case "fra":
     console.log(JSON.stringify(Array.from(new Set(pokedex.map(p => p.name.fra[0]))).sort(function(x,y){return x.localeCompare(y, 'fr')}).map(p => [p,p])))
     break
-}
+  case "ger":
+    console.log(JSON.stringify(Array.from(new Set(pokedex.map(p => p.name.ger[0]))).sort(function(x,y){return x.localeCompare(y, 'de')}).map(p => [p,p])))
+    break
+  }
